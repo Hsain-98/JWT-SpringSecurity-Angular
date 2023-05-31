@@ -1,7 +1,7 @@
 package com.example.exception;
 
 import com.auth0.jwt.exceptions.TokenExpiredException;
-import com.example.domain.HttpResponse;
+import com.example.entity.HttpResponse;
 import com.example.exception.domain.EmailExistException;
 import com.example.exception.domain.EmailNotFoundException;
 import com.example.exception.domain.UserNotFoundException;

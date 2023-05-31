@@ -1,7 +1,7 @@
 package com.example.filter;
 
 import com.example.constant.SecurityConstant;
-import com.example.domain.HttpResponse;
+import com.example.entity.HttpResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

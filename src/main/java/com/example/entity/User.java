@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.example.entity;
 
 import javax.persistence.*;
 import lombok.*;
@@ -26,7 +26,7 @@ public class User implements Serializable {
     private Date lastLoginDate;
     private Date lastLoginDateDisplay;
     private Date joinDate;
-    private String[] roles; //ROLE_USER, ROLE_ADMIN
+    private String roles; //ROLE_USER, ROLE_ADMIN
     private String[] authorities; //Permessions: {create, update, delete}
     private boolean isActive;
     private boolean isNotLocked;
