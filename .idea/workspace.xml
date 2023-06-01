@@ -4,24 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5b1bd40-2f27-421f-9975-34180896933c" name="Changes" comment="EXCEPTION HANDLING, ERROR PAGE">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/constant/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/constant/UserImplConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/enumeration/Role.java" afterDir="false" />
+    <list default="true" id="f5b1bd40-2f27-421f-9975-34180896933c" name="Changes" comment="Register, Login, Generate JWT">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/listener/AuthenticationFailureListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/listener/AuthenticationSuccessListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/LoginAttemptService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/domain/HttpResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/HttpResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/domain/UserPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/entity/UserPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/exception/ExceptionHandling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/exception/ExceptionHandling.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filter/JwtAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/JwtAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filter/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/filter/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/utility/JWTTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/utility/JWTTokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +84,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.JwtSpringSecurityAngularApplication">
     <configuration name="JwtSpringSecurityAngularApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.JwtSpringSecurityAngularApplication" />
       <module name="JWT-SpringSecurity-Angular" />
@@ -105,6 +94,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JwtSpringSecurityAngularApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="JWT-SpringSecurity-Angular" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.JwtSpringSecurityAngularApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,7 +121,7 @@
       <updated>1679326742954</updated>
       <workItem from="1681219964504" duration="9223000" />
       <workItem from="1685370454205" duration="22501000" />
-      <workItem from="1685530910986" duration="5800000" />
+      <workItem from="1685530910986" duration="14314000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1679326965674</created>
@@ -169,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685372658195</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Register, Login, Generate JWT">
+      <created>1685545630602</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685545630602</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,17 +197,8 @@
     <MESSAGE value="Filters" />
     <MESSAGE value="ERROR PAGE" />
     <MESSAGE value="EXCEPTION HANDLING, ERROR PAGE" />
-    <option name="LAST_COMMIT_MESSAGE" value="EXCEPTION HANDLING, ERROR PAGE" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/controller/UserController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Generate JWT" />
+    <MESSAGE value="Register, Login, Generate JWT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register, Login, Generate JWT" />
   </component>
 </project>
